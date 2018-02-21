@@ -1,4 +1,4 @@
-package Encapsulation;
+package com.oliulka.encapsulation;
 
 public class Printer 
 {
@@ -35,14 +35,13 @@ public class Printer
 			{ 	tonerLevel = 0; 
 				System.out.println("You are out of toner!"); }
 			
-		}
-		else
-		{
-			System.out.println("Passed parametr is over a 100%");
-			return -1;	
-		}
-		return tonerLevel;
-		
+			}
+			else
+			{
+				System.out.println("Passed parametr is over a 100%");
+				return -1;	
+			}
+			return tonerLevel;	
 	}
 	
 	public int printPage (int pagesPrinted)

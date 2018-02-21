@@ -1,6 +1,5 @@
-package Polymorphism;
+package com.oliulka.polymorphism;
 
-// We are going to go back to the car analogy.
 // Create a base class called Car
 // It should have a few fields that would be appropriate for a generice car calss.
 // engine, cylinders, wheels, etc.
@@ -14,7 +13,6 @@ package Polymorphism;
 // show a message for each in the base class
 // Now create 3 sub classes for your favorite vehicles.
 // Override the appropriate methods to demonstrate polymorphism in use.
-// put all classes in the one java file (this one).
 
 class Car {
 	
@@ -37,17 +35,17 @@ class Car {
 	public void startEngine(){
 		if (!engine){
 			this.engine=true;
-			System.out.println("Engine is running now!");
+			System.out.println("Base car engine is running now!");
 		}
 		else
 		{
-			System.out.println("Engine is already running!");
+			System.out.println("Base car engine is already running!");
 		}
 	}
 	
 	public int Accelerate (int speedUp){
 		this.speed += speedUp;
-		System.out.println("Speed up worked, current speed - " + this.speed);
+		System.out.println("Base car speed up worked, current speed - " + this.speed);
 		if (speed >=0)
 		{	
 			return speed;
@@ -59,8 +57,8 @@ class Car {
 	}
 	
 	public int slowDown (int speedDown){
-		this.speed += speedDown;
-		System.out.println("Slow down worked, current speed - " + this.speed);
+		this.speed -= speedDown;
+		System.out.println("Base car slow down worked, current speed - " + this.speed);
 		if (speed >=0)
 		{	
 			return speed;
@@ -142,8 +140,13 @@ class Audi extends Car {
 public class CarPolymorphism {
 	
 
-	public static void main (String args[]){
-		
+	public static void main (String args[])
+	{
+		Car myCar = new Car("BaseCar", 4);
+		myCar.startEngine();
+		myCar.Accelerate(100);
+		myCar.slowDown(80);
+		System.out.println("Done with base car");
 		Porsche myPorsche = new Porsche();
 		myPorsche.startEngine();
 		myPorsche.Accelerate(100);

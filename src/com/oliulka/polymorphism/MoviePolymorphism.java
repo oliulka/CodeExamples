@@ -1,4 +1,4 @@
-package Polymorphism;
+package com.oliulka.polymorphism;
 
 class Movie {
     private String name;

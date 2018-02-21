@@ -1,4 +1,4 @@
-package tests;
+package com.oliulka.tests;
 
 import java.net.MalformedURLException;
 import java.net.URL;

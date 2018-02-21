@@ -1,4 +1,4 @@
-package employee;
+package com.oliulka.simple;
 
 public class MyEmployee {
 	

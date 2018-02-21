@@ -1,4 +1,4 @@
-package pages;
+package com.oliulka.pages;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package Encapsulation;
+package com.oliulka.encapsulation;
 
 public class printerOne {
 
