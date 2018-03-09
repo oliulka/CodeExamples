@@ -1,6 +1,5 @@
-package com.oliulka.ui.pom.flows;
+package com.oliulka.ui.pom.pages;
 
-import com.oliulka.ui.pom.pages.Page01GoogleSearchPage;
 import com.oliulka.utilities.Constants;
 import com.oliulka.utilities.ExcelUtils;
 

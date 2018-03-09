@@ -1,4 +1,4 @@
-package com.oliulka.ui.pom.tests;
+package com.oliulka.ui.pom.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,8 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.Test;
-
-import com.oliulka.ui.pom.pages.Page01GoogleSearchPage;
 
 public class BrowserTest {
 	
